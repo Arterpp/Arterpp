@@ -1,0 +1,19 @@
+dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
+\\تنشأ التايمر
+
+dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
+\\تسوي الايفينت
+            
+dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+\\عدد اللحظات حيث ان (0, 0, 0) هذي الاصفار تصف عدد الساعات والدقائق والثواني            
+            
+dispatcherTimer.Start();
+\\تشير الى بدء العمل
+
+private DispatcherTimer dispatcherTimer;
+\\التعريف للتايمر
+
+private void dispatcherTimer_Tick(object sender, EventArgs e)
+        {
+            \\الاوامر اللي ابيها تصير كل ثانية
+        }
